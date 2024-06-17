@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import DarkProvider from "@/components/DarkProvider";
+import SideNav from "@/components/SideNav";
+import { Toaster } from "@/components/ui/sonner"    
+import MediaNav from "@/components/MediaNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +19,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <DarkProvider>
+          <div className="flex max-w-[1500px] mx-auto">
+            <MediaNav/>
+            <SideNav />
+            <main className="mt-10 xl:mt-0 w-full">{children}</main>
+            <Toaster/>
+          </div>
+        </DarkProvider>
+      </body>
     </html>
   );
 }
