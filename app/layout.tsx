@@ -26,7 +26,7 @@ export default function RootLayout({
             <MediaNav/>
             <SideNav />
             <main className="mt-10 xl:mt-0 w-full">{children}</main>
-            <Toaster/>
+            <Toaster position="top-center"/>
           </div>
         </DarkProvider>
       </body>

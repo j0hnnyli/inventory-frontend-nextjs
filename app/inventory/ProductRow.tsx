@@ -55,7 +55,7 @@ const ProductRow = ({
         return;
       }
 
-      const status = await updateItem(
+      await updateItem(
         url,
         id,
         newTitle,
