@@ -22,7 +22,7 @@ Features :
 </ul>
 
 ## How to set Up
-1) clone the repo in VsCode : <code>https://github.com/j0hnnyli/inventory-frontend-nextjs.git</code>
+1) clone the repo in VsCode : <code>git clone https://github.com/j0hnnyli/inventory-frontend-nextjs.git</code>
 2) run command : <code> npm run dev </code>
 3) If you get a error "Next Command not found", run the following command : <code>npm install next</code>
 4) Then repeat number 2
