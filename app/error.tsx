@@ -16,7 +16,7 @@ const error = () => {
         <h2 className="text-green-500 text-2xl text-center">
           Thank you for your patience while our servers are waking up
         </h2>
-        <p className="text-xl text-red-500 text-center">Please try and refresh in a few seconds</p>
+        <p className="text-xl text-red-500 text-center">Please try and refresh in a 10 seconds</p>
       </div>
     </div>
   );
